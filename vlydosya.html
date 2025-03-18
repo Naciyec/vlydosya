@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voleybol Sitesi</title>
+    <style>
+        body { font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif; margin: 5000; padding: 10; background: #bdb8b8; }
+        .tab { display: none; padding: 10px; margin-left: 0px; text-align: left; border-radius: 10px; }
+        .active { display: block; }
+        nav { background: #333; padding: 10px; text-align: center; }
+        nav a { color: white; padding: 0px; text-decoration: none; margin: 5px; }
+        nav a:hover { background: #082301; }
+        .container { display: flex; justify-content: space-between; }
+        .left, .right { width: 48%; }
+        #anasayfa { background: #bdb8b8; }
+        #takimlar { background: #bdb8b8; }
+        #fikstur { background: #bdb8b8; }
+        #sampiyonlar { background: #bdb8b8; }
+        #haberler { background: #bdb8b8; }
+        #hakkimizda { background: #bdb8b8; }
+        #haberler ul li { margin-bottom: 15px; }
+        #anasayfa h1 {
+        color: #ba0000; }
+        #takimlar h1 {
+        color: #ba0000; }
+        #takimlar h2 {
+            color:#050063 ; }
+        #fikstur h1 {
+        color: #ba0000;} 
+        #fikstur h2 {
+            color: #050063;} 
+        #sampiyonlar h1 {
+        color: #ba0000;} 
+        #sampiyonlar h2 {
+            color: #050063;} 
+        #haberler h1 {
+        color: #ba0000; }
+        #hakkimizda h1 {
+        color: #ba0000; 
+        }
+    </style>
+</head>
+<body>
+  
+   
+    
+    
+    <nav>
+        <a href="#" onclick="showTab('anasayfa')">Anasayfa</a>
+        <a href="#" onclick="showTab('takimlar')">Takımlar</a>
+        <a href="#" onclick="showTab('fikstur')">Fikstür</a>
+        <a href="#" onclick="showTab('sampiyonlar')">Şampiyonlar</a>
+        <a href="#" onclick="showTab('haberler')">Voleybol Haberleri</a>
+        <a href="#" onclick="showTab('hakkimizda')">Hakkımızda</a>
+    </nav>
+
+    
+    <div id="anasayfa"  class="tab active">
+        <h1>Anasayfa</h1>
+        <p>Voleybol dünyasına hoş geldiniz! Burada Türkiye ve dünya voleybolundaki gelişmeleri takip edebilirsiniz.</p>
+    </div>
+    
+    <div id="takimlar" class="tab">
+        <h1>Takımlar</h1>
+        <div class="container">
+            <div class="left">
+                <h2>Kadın Takımları</h2>
+                <ul>
+                    <li>VakıfBank</li>
+                    <li>Eczacıbaşı Dynavit</li>
+                    <li>Fenerbahçe Opet</li>
+                    <li>Galatasaray Daikin</li>
+                </ul>
+            </div>
+            <div class="right">
+                <h2>Erkek Takımları</h2>
+                <ul>
+                    <li>Halkbank</li>
+                    <li>Ziraat Bankkart</li>
+                    <li>Fenerbahçe HDI Sigorta</li>
+                    <li>Galatasaray HDI Sigorta</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="fikstur" class="tab">
+        <h1>Fikstür</h1>
+        <div class="container">
+            <div class="left">
+                <h2>Kadınlar</h2>
+                <ul>
+                    <li>VakıfBank vs Eczacıbaşı - 20 Mart 2025</li>
+                    <li>Fenerbahçe Opet vs Galatasaray Daikin - 22 Mart 2025</li>
+                </ul>
+            </div>
+            <div class="right">
+                <h2>Erkekler</h2>
+                <ul>
+                    <li>Halkbank vs Ziraat Bankkart - 20 Mart 2025</li>
+                    <li>Fenerbahçe HDI Sigorta vs Galatasaray HDI Sigorta - 22 Mart 2025</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="sampiyonlar" class="tab">
+        <h1>Şampiyonlar</h1>
+        <div class="container">
+            <div class="left">
+
+                <h2>Kadınlar</h2>
+                <ul>
+                    <li>2024 - VakıfBank</li>
+                    <li>2023 - Eczacıbaşı Dynavit</li>
+                    <li>2022 - Fenerbahçe Opet</li>
+                </ul>
+            </div>
+            <div class="right">
+                <h2>Erkekler</h2>
+                <ul>
+                    <li>2024 - Halkbank</li>
+                    <li>2023 - Ziraat Bankkart</li>
+                    <li>2022 - Fenerbahçe Medicana</li>
+                    <li>2022 - Arkas</li>
+                    <li>2022 - Galatasaray HDI Sigorta</li>
+                    <li>2022 - İstanbul Büyükşehir Belediyesi</li>
+                    <li>2022 - Bursaspor</li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="haberler" class="tab">
+        <h1>Voleybol Haberleri</h1>
+        <ul>
+            <li>VakıfBank, Şampiyonlar Ligi çeyrek finalinde!</li>
+            <li>Halkbank, Efeler Ligi'nde ilk dörde kalamadı.</li>
+            <li>Eczacıbaşı Dynavit, Ferhat Akbaş ile yollarını ayırdıklarını duyurdu.</li>
+        </ul>
+    </div>
+    
+    <div id="hakkimizda" class="tab">
+        <h1>Hakkımızda</h1>
+        <p>Bu site, Türkiye'deki voleybolseverler için oluşturulmuştur. Sultanlar ve Efeler Ligi'ne dair en güncel bilgileri paylaşmayı amaçlıyoruz.</p>
+    </div>
+    
+    <script>
+        function showTab(tabId) {
+            let tabs = document.querySelectorAll('.tab');
+            tabs.forEach(tab => tab.classList.remove('active'));
+            document.getElementById(tabId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
